@@ -1,6 +1,7 @@
-use criterion::{black_box, criterion_group, criterion_main, Criterion};
+use criterion::{criterion_group, criterion_main, Criterion};
 use llmrace::sse::SseParser;
 use llmrace::stats::Sample;
+use std::hint::black_box;
 
 fn realistic_stream(n_events: usize) -> Vec<u8> {
     let mut bytes = Vec::new();
