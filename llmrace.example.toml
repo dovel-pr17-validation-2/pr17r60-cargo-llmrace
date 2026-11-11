@@ -1,0 +1,23 @@
+# llmrace configuration profiles.
+# Copy to ./llmrace.toml (or ~/.config/llmrace/config.toml) and run:
+#   llmrace --profile fast
+
+[profiles.fast]
+providers = ["openai", "groq"]
+prompt = "Reply with a single word."
+runs = 1
+warmup = 0
+concurrency = 2
+
+[profiles.overnight]
+providers = ["openai", "anthropic", "groq", "ollama"]
+runs = 20
+warmup = 2
+max_tokens = 1024
+timeout = 300
+
+[profiles.ci]
+providers = ["mock"]
+runs = 3
+warmup = 1
+concurrency = 1
