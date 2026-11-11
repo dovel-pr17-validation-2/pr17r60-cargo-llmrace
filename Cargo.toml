@@ -30,7 +30,7 @@ ratatui = "0.29"
 crossterm = "0.28"
 
 [dev-dependencies]
-criterion = "0.5"
+criterion = "0.8"
 
 [[bench]]
 name = "sse"
