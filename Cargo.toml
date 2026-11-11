@@ -27,7 +27,7 @@ anyhow = "1"
 thiserror = "2"
 toml = "0.8"
 ratatui = "0.29"
-crossterm = "0.28"
+crossterm = "0.29"
 
 [dev-dependencies]
 criterion = "0.5"
