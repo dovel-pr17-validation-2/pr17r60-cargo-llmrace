@@ -58,7 +58,7 @@ jobs:
           7z a "$dir.zip" "$dir"
           sha256sum "$dir.zip" > "$dir.zip.sha256"
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.target }}
           path: llmrace-*-${{ matrix.target }}.*
